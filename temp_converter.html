@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width,
+				initial-scale=1.0">
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			font-family:
+				Verdana, Geneva, Tahoma, sans-serif;
+		}
+
+		.container {
+			width: 100%;
+			height: 100vh;
+			background-image:
+				url("data:image/jpeg;base64,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");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+        img{
+			opacity: 0.3;
+		}
+		.container h1 {
+			color: green;
+			font-weight: 700;
+			font-size: 25px;
+			text-align: center;
+		}
+
+		.converter-row {
+			display: flex;
+			width: 40%;
+			justify-content: space-between;
+			align-items: center;
+			background: rgb(0, 56, 0);
+			border-radius: 10px;
+			padding: 50px 20px;
+		}
+
+		.col {
+			flex-basis: 32%;
+			text-align: center;
+		}
+
+		.col label {
+			font-size: 15px;
+			font-weight: 500;
+			margin-bottom: 10px;
+			color: #fff;
+		}
+
+		.col input {
+			width: 150px;
+			height: 30px;
+			background: white;
+			border-radius: 5px;
+			text-align: center;
+		}
+        .img-temp{
+            width:50%;
+			opacity: 0.5;
+            height:200px;
+
+        }
+		
+		.heading{
+			color:rgb(82, 126, 39);
+
+		}
+	</style>
+</head>
+
+<body>
+   
+   
+</div>
+	<div class="container">
+		<div class="heading">
+		<center> <h1>Convert Tempreature <br></h1><BR><BR>
+			</div>
+		</center>
+        
+		
+		<div class="converter-row">
+			<div class="col">
+				<label>Fahrenheit</label>
+				<input type="number"
+					id="fahrenheit">
+			</div>
+
+			<div class="col">
+				<label>Celsius</label>
+				<input type="number"
+					id="celsius">
+			</div>
+
+			<div class="col">
+				<label>Kelvin</label>
+				<input type="number"
+					id="kelvin">
+			</div>
+		</div><br><br>
+        <img class="img-temp" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb3LiXclcd0JMIbMfkSyfsX-abThiU6lKgyw&usqp=CAU">
+	</div>
+    
+
+	<script>
+		let celsius =
+			document.getElementById('celsius');
+		let fahrenheit =
+			document.getElementById('fahrenheit');
+		let kelvin =
+			document.getElementById('kelvin');
+		celsius.oninput = function () {
+			let f = (parseFloat(celsius.value) * 9) / 5 + 32;
+			fahrenheit.value = parseFloat(f.toFixed(2));
+
+			let k = (parseFloat(celsius.value) + 273.15);
+			kelvin.value = parseFloat(k.toFixed(2));
+		}
+		fahrenheit.oninput = function () {
+			let c = ((parseFloat(
+				fahrenheit.value) - 32) * 5) / 9;
+			celsius.value = parseFloat(c.toFixed(2));
+
+			let k = (parseFloat(
+				fahrenheit.value) - 32) * 5 / 9 + 273.15;
+			kelvin.value = parseFloat(k.toFixed(2));
+		}
+		kelvin.oninput = function () {
+			let f = (parseFloat(
+				kelvin.value) - 273.15) * 9 / 5 + 32;
+			fahrenheit.value = parseFloat(f.toFixed(2));
+
+			let c = (parseFloat(kelvin.value) - 273.15);
+			celsius.value = parseFloat(c.toFixed(2));
+		}
+	</script>
+</body>
+
+</html>
